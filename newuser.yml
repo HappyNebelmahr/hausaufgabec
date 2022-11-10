@@ -1,0 +1,28 @@
+- name: Manage User Groups
+  hosts: azure
+  become: yes
+  tasks:
+    - user:
+        name: Albert
+        uid: 19111
+        groups: groupC
+        state: present
+        password_lock: hallo
+    - user:
+        name: Alfred
+        uid: 22022
+        password_lock: abcd
+        groups: groupB
+        state: present
+    - user:
+        name: Anna
+        uid: 39333
+        password_lock: asdf
+        groups: groupA
+        state: present
+    - user:
+        name: Benedikt
+        uid: 42444
+        password_lock: fhgj
+        groups: groupD
+        state: present

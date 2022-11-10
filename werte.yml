@@ -1,0 +1,12 @@
+name: "variablen"
+hosts: all
+vars: 
+  zahl: 50
+  kommazzahl: 34.123
+  name: "irgendwas"
+tasks:
+  -debug:
+     msg:
+       - "Meine Lieblingszahl ist {{zahl}}"
+       - "die Kommazahl ist {{Kommazahl}}"
+       - "Mein Name ist{{name}}"

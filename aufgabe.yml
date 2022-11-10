@@ -1,0 +1,14 @@
+ name: Aufgabe1
+ hosts: "all"
+ vars:
+    myfile: "{{ ~ /tmp/config/eigene_config.txt }}"
+    tasks:
+    - name: zeug
+      ansible.builtin.copy:
+      dest: "{{ myfile }}"
+      content: |
+        hallo welt
+        ups i did it again
+    - name: "Aufgabe2" 
+      command: echo dies ist eine ausgabe?
+

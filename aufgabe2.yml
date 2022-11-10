@@ -1,0 +1,5 @@
+ name: Aufgabe1
+ hosts: "all"
+ tasks:
+    - name: "Aufgabe2" 
+      command: echo dies ist eine ausgabe?

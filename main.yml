@@ -1,0 +1,5 @@
+- name: "Yaml realisieren"
+  hosts: all
+  tasks:
+    - debug:
+        msg:

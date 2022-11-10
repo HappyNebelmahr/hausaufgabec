@@ -1,0 +1,12 @@
+ name: Aufgabe3
+ hosts: "all"
+ vars:
+ Greetings: true
+ farewell : true
+ x : 2
+ y : 25
+ tasks:
+  - name: "hallowelt"
+    command : echo hallo welt
+  - name: "Goodbye,World!"
+    command: echo "goodbye world!"
