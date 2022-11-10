@@ -1,4 +1,4 @@
- name: Aufgabe3
+ name: Aufgabe2
  hosts: "all"
  vars:
  Greetings: true

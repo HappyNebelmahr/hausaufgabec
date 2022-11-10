@@ -1,0 +1,29 @@
+tasks:
+  - name: Hausaufgabe3
+    hosts: "all"
+vars:
+ Greetings: true
+ farewell : true
+ x : 2
+ y : 25
+ tasks:
+  - name: "hallowelt"
+    command : echo hallo welt
+    when: Greetings == true && farewell == true
+  - name: "Goodbye,World!"
+    command: echo "goodbye world!"
+    when: Greetings == true && farewell == true
+  - name: "hallowelt"
+    command : echo hallo welt
+    when: Greetings == true && x>5
+  - name: "Goodbye,World!"
+    command: echo "goodbye world!"
+    when: Greetings == true && y<50
+  - name: "hallowelt"
+    command : echo hallo welt
+    when: Greetings == true or farewell == true
+  - name: "Goodbye,World!"
+    command: echo "goodbye world!"
+    when: Greetings != true or farewell == true
+  - name: "hallowelt"
+    
